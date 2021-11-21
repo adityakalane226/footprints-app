@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footprints app</title>
+    <link rel="stylesheet" href="/footprints app/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="(max-width:840px)" href="/footprints app/css/laptop.css">
+    <link rel="stylesheet" media="(min-width:320px) and (max-width:400px)" href="/footprints app/css/phone.css">
+    <link rel="stylesheet" media="(min-width:421px)"href="/footprints app/css/tablet.css">
+    <link rel="stylesheet" media="(min-width:840px) and (max-width:1170px)" href="/footprints app/css/bigscreen.css">
+</head>
+
+<body>
+    <h1 id="footprintsHeading">
+        FOOTPRINTS
+    </h1>
+
+    <div id="container">
+        <ol id="questionContainer">
+            <div class="specificquestion" name="travelDay">
+                <li class="question">
+                    How much distance you travel every day?
+                </li>
+                <input type="number" name="question1" id="questionOne" class="inputDesign">
+            </div>
+            <div class="specificquestion" id="transportation">
+                <li class="question">How do you travel this distance?</li>
+                Private Vehicle:<input type="checkbox" name="transporatationCheckbox" id="checkboxId">
+            </div>
+            
+            
+            <div class="specificquestion">
+                <li class="question">
+                    How much plant you planted till now?
+                </li>
+                <input type="number" name="question3" id="questionThree" class="inputDesign">
+                
+            </div>
+            <div id="button">
+                
+                <button class="btn" onclick="check()">Submit</button>
+                <button type="reset" class="btn" onclick="deleteValue()">Reset</button>
+                
+            </div>
+        </ol>
+        <div id="answer">
+
+        </div>
+    </div>
+    <script src="/footprints app/js/script.js"></script>
+
+</body>
+
+</html>
